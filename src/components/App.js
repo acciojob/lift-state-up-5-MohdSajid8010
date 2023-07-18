@@ -17,10 +17,10 @@ const App = () => {
           (
             <form>
               <label htmlFor="Name">Username:</label>
-              <input type="text" id="Name" onChange={(e) => setItem({ ...formData, name: e.target.value })} />
+              <input type="text" id="Name" onChange={(e) => setFormData({ ...formData, name: e.target.value })} />
 
               <label htmlFor="password">Password:</label>
-              <input type="password" id="password" onChange={(e) => setItem({ ...formData, password: e.target.value })} />
+              <input type="password" id="password" onChange={(e) => setFormData({ ...formData, password: e.target.value })} />
 
               <button onClick={() => setisLoggedIn(true)}>Login</button>
             </form>
