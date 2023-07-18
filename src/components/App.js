@@ -15,7 +15,7 @@ const App = () => {
             <p>You are logged in!</p>
           ) :
           (
-            <div>
+            <form>
               <label htmlFor="Name">Username:</label>
               <input type="text" id="Name" onChange={(e) => setItem({ ...formData, name: e.target.value })} />
 
@@ -23,7 +23,7 @@ const App = () => {
               <input type="password" id="password" onChange={(e) => setItem({ ...formData, password: e.target.value })} />
 
               <button onClick={() => setisLoggedIn(true)}>Login</button>
-            </div>
+            </form>
           )
       }
 
